@@ -17,7 +17,7 @@ export const Reliability = () => {
                         </motion.h2>
                         <p className="text-secondary">
                             Continuous backups, automatic fallbacks, full history, compliance, consistent state.
-                            If something goes wrong — Verei brings it back.
+                            If something goes wrong — Verey brings it back.
                         </p>
                         <div className="d-flex gap-2 flex-wrap">
                             <span className="badge bg-success-subtle text-success rounded-pill">Backups</span>
@@ -36,7 +36,7 @@ export const Reliability = () => {
                         >
                             <h5 className="fw-semibold mb-2">“Infrastructure simplicity that grows with your business.”</h5>
                             <p className="small mb-0 text-white-50">
-                                Verei was designed for teams that don’t want to burn weeks on DevOps, but still want
+                                Verey was designed for teams that don’t want to burn weeks on DevOps, but still want
                                 observability, security and repeatability.
                             </p>
                         </motion.div>

@@ -22,7 +22,7 @@ export const VisionMission = () => {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="text-secondary"
                         >
-                            Verei makes infrastructure management effortless and accessible for every company —
+                            Verey makes infrastructure management effortless and accessible for every company —
                             no matter its size, team or cloud provider.
                         </motion.p>
                     </div>

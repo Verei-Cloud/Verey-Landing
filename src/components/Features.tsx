@@ -8,7 +8,7 @@ const features = [
     },
     {
         title: 'Unlimited scalability',
-        text: 'From prototype to production — Verei scales across multiple providers.',
+        text: 'From prototype to production — Verey scales across multiple providers.',
         badge: '02',
     },
     {
@@ -18,7 +18,7 @@ const features = [
     },
     {
         title: 'Smart rollbacks',
-        text: 'If something fails, Verei instantly restores the latest stable version.',
+        text: 'If something fails, Verey instantly restores the latest stable version.',
         badge: '04',
     },
 ];
@@ -28,7 +28,7 @@ export const Features = () => {
         <section id="features" className="py-5">
             <div className="container">
                 <div className="d-flex justify-content-between align-items-center mb-4">
-                    <h2 className="fw-bold mb-0">Key Features of Verei</h2>
+                    <h2 className="fw-bold mb-0">Key Features of Verey</h2>
                     <p className="text-muted mb-0 small">Inspired by your PDF deck.</p>
                 </div>
                 <div className="row g-4">

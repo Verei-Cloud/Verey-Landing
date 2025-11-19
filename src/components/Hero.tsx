@@ -12,7 +12,7 @@ export const Hero = () => {
                             transition={{ duration: 0.6 }}
                             className="badge rounded-pill bg-success-subtle text-success mb-3 fw-semibold"
                         >
-                            Verei — build your product, not your pipelines.
+                            Verey — build your product, not your pipelines.
                         </motion.span>
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -28,7 +28,7 @@ export const Hero = () => {
                             transition={{ duration: 0.7, delay: 0.2 }}
                             className="lead text-secondary mb-4"
                         >
-                            Describe your infra in YAML or UI — Verei will provision, secure,
+                            Describe your infra in YAML or UI — Verey will provision, secure,
                             version and roll back for you. No full-time DevOps required.
                         </motion.p>
 
@@ -53,7 +53,7 @@ export const Hero = () => {
                             className="d-flex align-items-center gap-3 mt-4"
                         >
                             <div className="small text-muted">
-                                Gdańsk, Poland · partners@verei.co · +48 730 664 826
+                                Gdańsk, Poland · partners@verey-platform.com · +48 730 664 826
                             </div>
                         </motion.div>
                     </div>
@@ -68,13 +68,13 @@ export const Hero = () => {
                             {/* логотип */}
                             <div className="d-flex align-items-center gap-3 mb-3">
                                 <img
-                                    src="/assets/verei-logo.png"
-                                    alt="Verei Logo"
+                                    src="/assets/verey-logo.png"
+                                    alt="Verey Logo"
                                     className="rounded-3"
                                     style={{ width: 64, height: 64, objectFit: 'cover' }}
                                 />
                                 <div>
-                                    <div className="fw-semibold">Verei Cloud Orchestrator</div>
+                                    <div className="fw-semibold">Verey Cloud Orchestrator</div>
                                     <small className="text-muted">Multi-cloud · Secure · YAML-first</small>
                                 </div>
                             </div>

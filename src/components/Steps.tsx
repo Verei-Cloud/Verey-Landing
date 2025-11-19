@@ -10,7 +10,7 @@ const steps = [
         text: 'AWS, Azure, GCP or mixed / hybrid setups.',
     },
     {
-        title: 'Verei plans & executes',
+        title: 'Verey plans & executes',
         text: 'Validations, provisioning, policies, secrets.',
     },
     {

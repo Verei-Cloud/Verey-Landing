@@ -13,20 +13,20 @@ export const Contact = () => {
         setStatus('loading');
 
         try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name,
-                    company,
-                    email,
-                    message,
-                }),
-            });
-
-            if (!res.ok) {
-                throw new Error('Request failed');
-            }
+            // const res = await fetch('/api/contact', {
+            //     method: 'POST',
+            //     headers: { 'Content-Type': 'application/json' },
+            //     body: JSON.stringify({
+            //         name,
+            //         company,
+            //         email,
+            //         message,
+            //     }),
+            // });
+            //
+            // if (!res.ok) {
+            //     throw new Error('Request failed');
+            // }
 
             setStatus('success');
             // очистим поля
@@ -55,13 +55,13 @@ export const Contact = () => {
                             Contact us
                         </motion.h2>
                         <p className="text-secondary mb-4">
-                            Want to integrate Verei in your current infra, need a demo or want to discuss enterprise features?
+                            Want to integrate Verey in your current infra, need a demo or want to discuss enterprise features?
                         </p>
 
                         <ul className="list-unstyled mb-0">
                             <li className="mb-2"><strong>Phone:</strong> +48 730 664 826</li>
-                            <li className="mb-2"><strong>Website:</strong> www.verei.co</li>
-                            <li className="mb-2"><strong>Email:</strong> partners@verei.co</li>
+                            <li className="mb-2"><strong>Website:</strong> www.verey-platform.com</li>
+                            <li className="mb-2"><strong>Email:</strong> partners@verey-platform.com</li>
                             <li className="mb-2"><strong>Location:</strong> Gdańsk, Poland</li>
                         </ul>
                     </div>

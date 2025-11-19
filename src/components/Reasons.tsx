@@ -5,7 +5,7 @@ const reasons = [
     'Faster time to market: deploy new environments in minutes.',
     'Reliability: automatic backups, fail-safes, and rollback logic.',
     'Flexibility: need a feature — let’s talk.',
-    'Double safety: guarantees from Verei + partner cloud providers.',
+    'Double safety: guarantees from Verey + partner cloud providers.',
 ];
 
 export const Reasons = () => {
@@ -21,7 +21,7 @@ export const Reasons = () => {
                             transition={{ duration: 0.4 }}
                             className="fw-bold mb-3"
                         >
-                            Reasons to choose Verei
+                            Reasons to choose Verey
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0 }}
