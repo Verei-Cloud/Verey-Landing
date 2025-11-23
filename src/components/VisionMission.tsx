@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const VisionMission = () => {
     return (
-        <section id="vision" className="py-5 bg-light">
+        <section id="vision" className="py-5 section-soft">
             <div className="container">
                 <div className="row g-4 align-items-center">
                     <div className="col-lg-5">
@@ -12,6 +12,7 @@ export const VisionMission = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                             className="fw-bold mb-3"
+                            style={{ color: 'var(--verey-dark)' }}
                         >
                             Vision & Mission
                         </motion.h2>
@@ -20,12 +21,14 @@ export const VisionMission = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="text-secondary"
+                            className="mb-0"
+                            style={{ color: 'var(--verey-muted)' }}
                         >
                             Verey makes infrastructure management effortless and accessible for every company —
                             no matter its size, team or cloud provider.
                         </motion.p>
                     </div>
+
                     <div className="col-lg-7">
                         <div className="row g-4">
                             <div className="col-md-6">
@@ -36,7 +39,7 @@ export const VisionMission = () => {
                                     transition={{ duration: 0.5 }}
                                     className="p-4 rounded-4 bg-white shadow-sm h-100"
                                 >
-                                    <h5 className="fw-semibold mb-2">Our Mission</h5>
+                                    <h5 className="fw-semibold mb-2" style={{ color: 'var(--verey-violet)' }}>Our Mission</h5>
                                     <p className="small text-muted mb-0">
                                         “To make infrastructure management effortless and accessible for every company.”
                                     </p>
@@ -50,7 +53,7 @@ export const VisionMission = () => {
                                     transition={{ duration: 0.55, delay: 0.1 }}
                                     className="p-4 rounded-4 bg-white shadow-sm h-100"
                                 >
-                                    <h5 className="fw-semibold mb-2">Our Vision</h5>
+                                    <h5 className="fw-semibold mb-2" style={{ color: 'var(--verey-violet)' }}>Our Vision</h5>
                                     <p className="small text-muted mb-0">
                                         “A world where anyone can deploy, scale & secure apps using only YAML or intuitive UI.”
                                     </p>

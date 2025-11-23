@@ -6,14 +6,12 @@ import { Steps } from './components/Steps';
 import Reliability from './components/Reliability';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import {Navbar} from "./components/Navbar.tsx";
 
 export const App = () => {
     return (
-        <div className="bg-body text-dark">
-            {/* плавающие фоновые круги */}
-            <div className="floating-dot floating-dot-1" />
-            <div className="floating-dot floating-dot-2" />
-            <div className="floating-dot floating-dot-3" />
+        <div>
+            <Navbar/>
             <Hero />
             <VisionMission />
             <Features />

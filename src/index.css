@@ -1,77 +1,119 @@
-body {
-  background: #f3f4f6;
+:root{
+  --verey-violet:#6C4CF5;      /* main */
+  --verey-magenta:#B66BFF;     /* secondary */
+  --verey-blue:#5B8CFF;        /* accent */
+  --verey-dark:#0f1020;
+  --verey-text:#171717;
+  --verey-muted:#6b7280;
+  --verey-soft:#f6f4ff;        /* soft bg */
 }
 
-.hero-section {
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  background: radial-gradient(circle at top, rgba(141, 248, 170, 0.25), transparent 40%), #f3f4f6;
+body{ background:#ffffff; color:var(--verey-text); }
+
+.btn-verey{
+  background: linear-gradient(135deg,var(--verey-violet),var(--verey-magenta));
+  border:0; color:#fff;
+}
+.btn-verey:hover{ filter:brightness(0.95); color:#fff; }
+
+.btn-outline-verey{
+  color:var(--verey-violet);
+  border:1px solid var(--verey-violet);
+  background:#fff;
+}
+.btn-outline-verey:hover{
+  color:#fff;
+  background:var(--verey-violet);
+  border-color:var(--verey-violet);
 }
 
-.hero-card {
-  border: 1px solid rgba(0, 0, 0, 0.03);
+/* Glassy top bar */
+.verey-nav{
+  --bg: rgba(15,16,32,0.35);
+  backdrop-filter: blur(10px);
+  background: var(--bg);
+  border-bottom: 1px solid rgba(108,76,245,.15);
+  transition: background .25s ease, box-shadow .25s ease;
+}
+.verey-nav--scrolled{
+  --bg: rgba(15,16,32,0.55);
+  box-shadow: 0 8px 30px rgba(108,76,245,.12);
 }
 
-.feature-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+/* Links */
+.verey-nav .nav-link{
+  color: #d9d9e3;
+  opacity: .9;
 }
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(4, 119, 71, 0.1);
-}
-
-.feature-badge {
-  width: 42px;
-  height: 42px;
-  background: linear-gradient(135deg, #43cb83 0%, #9be15d 100%);
-  border-radius: 999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
+.verey-nav .nav-link:hover{
   color: #fff;
-  position: absolute;
-  top: -20px;
-  right: 16px;
-  box-shadow: 0 10px 30px rgba(37, 154, 94, 0.4);
+  opacity: 1;
 }
 
-.floating-dot {
-  position: fixed;
-  border-radius: 9999px;
-  filter: blur(30px);
-  opacity: 0.45;
-  z-index: -1;
-  animation: float 12s ease-in-out infinite;
+/* Brand */
+.verey-nav .navbar-brand{
+  color:#fff;
 }
 
-.floating-dot-1 {
-  width: 240px;
-  height: 240px;
-  background: radial-gradient(circle, rgba(98, 214, 132, 0.5), transparent 70%);
-  top: 6%;
-  left: 5%;
+/* Ensure hero isn't hidden behind fixed nav */
+.hero-section{ padding-top: 88px; }        /* adjust if nav height changes */
+
+/* Bootstrap burger icon visible on dark bg */
+.navbar-toggler{
+  border-color: rgba(255,255,255,.25);
+}
+.navbar-toggler-icon{
+  filter: invert(1) brightness(1.5);
 }
 
-.floating-dot-2 {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(155, 225, 93, 0.45), transparent 70%);
-  bottom: 10%;
-  right: 7%;
+.badge-verey{
+  background:rgba(108,76,245,.12);
+  color:var(--verey-violet);
+  border:1px solid rgba(108,76,245,.25);
 }
 
-.floating-dot-3 {
-  width: 180px;
-  height: 180px;
-  background: radial-gradient(circle, rgba(81, 205, 143, 0.3), transparent 70%);
-  top: 45%;
-  right: 40%;
+.hero-section{
+  min-height:92vh; display:flex; align-items:center;
+  background:
+          linear-gradient(135deg, rgba(108,76,245,.12), transparent 35%),
+          linear-gradient(315deg, rgba(182,107,255,.12), transparent 40%),
+          #fff;
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15px); }
+.hero-card{
+  border:1px solid rgba(0,0,0,.05);
+  box-shadow: 0 20px 60px rgba(108,76,245,.12);
 }
+
+.feature-badge{
+  width:42px;height:42px;border-radius:999px;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;
+  background:linear-gradient(135deg,var(--verey-violet),var(--verey-magenta));
+  position:absolute;top:-20px;right:16px;
+  box-shadow:0 12px 36px rgba(108,76,245,.45);
+}
+
+.feature-card{ transition:transform .25s ease, box-shadow .25s ease; }
+.feature-card:hover{
+  transform: translateY(-4px);
+  box-shadow:0 18px 50px rgba(108,76,245,.15);
+}
+
+/* floating corners (echoing the card design) */
+.floating-corner{
+  position:fixed; z-index:-1; filter:blur(0.3px); opacity:.9;
+  width:320px;height:320px; transform: rotate(45deg);
+  background:
+          linear-gradient(135deg, var(--verey-magenta), var(--verey-violet));
+  clip-path: polygon(0 0,100% 0,100% 70%,70% 100%,0 100%,0 0);
+  box-shadow: 0 40px 120px rgba(108,76,245,.25);
+}
+.fc-left{ left:-140px; bottom: -60px; }
+.fc-right{ right:-160px; top:-70px; background:
+        linear-gradient(135deg, var(--verey-blue), var(--verey-violet)); }
+
+.section-soft{ background: var(--verey-soft); }
+
+.link-muted{ color:var(--verey-muted); text-decoration:none; }
+.link-muted:hover{ color:var(--verey-violet); }
