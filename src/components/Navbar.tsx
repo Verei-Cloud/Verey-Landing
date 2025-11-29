@@ -17,9 +17,13 @@ export const Navbar = () => {
             }`}
         >
             <div className="container">
-                <a className="navbar-brand d-flex align-items-center gap-2" href="#top">
-                    <img src="/assets/verey-logo.png" alt="Verey" width={28} height={28} />
-                    <span className="fw-semibold">Verey</span>
+                {/*<a className="navbar-brand d-flex align-items-center gap-2" href="#top">*/}
+                {/*    <img src="/assets/verey-logo.png" alt="Verey" width={28} height={28} />*/}
+                {/*    <span className="fw-semibold">Verey</span>*/}
+                {/*</a>*/}
+                <a className="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#top">
+                    <img src="/assets/Verey-platform-icon.png" alt="Verey" style={{margin: "-20px"}} width={120} height={120}/>
+                    {/*<span className="fw-semibold">Verey</span>*/}
                 </a>
 
                 <button
@@ -31,7 +35,7 @@ export const Navbar = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="navbar-toggler-icon" />
+                    <span className="navbar-toggler-icon"/>
                 </button>
 
                 <div className="collapse navbar-collapse" id="vereyNav">

@@ -29,14 +29,16 @@ body{ background:#ffffff; color:var(--verey-text); }
 
 /* Glassy top bar */
 .verey-nav{
-  --bg: rgba(15,16,32,0.35);
+  /*--bg: rgb(112 73 204 / 90%);*/
+  --bg: linear-gradient(135deg, var(--verey-magenta), var(--verey-violet));
   backdrop-filter: blur(10px);
   background: var(--bg);
   border-bottom: 1px solid rgba(108,76,245,.15);
   transition: background .25s ease, box-shadow .25s ease;
 }
 .verey-nav--scrolled{
-  --bg: rgba(15,16,32,0.55);
+  --bg: linear-gradient(135deg, #b66bffc7, #6c4cf5b5);
+  /*-bg: linear-gradient(135deg, var(--verey-magenta), var(--verey-violet));*/
   box-shadow: 0 8px 30px rgba(108,76,245,.12);
 }
 

@@ -71,7 +71,7 @@ export const Hero = () => {
                         >
                             <div className="d-flex align-items-center gap-3 mb-3">
                                 <img
-                                    src="/assets/verey-logo.png"
+                                    src="/assets/Verey-platform-icon.png"
                                     alt="Verey Logo"
                                     className="rounded-3"
                                     style={{ width: 64, height: 64, objectFit: 'cover' }}
